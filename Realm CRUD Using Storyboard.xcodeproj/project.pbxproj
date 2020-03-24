@@ -13,6 +13,7 @@
 		2A457203242A474E00341B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A457201242A474E00341B1A /* Main.storyboard */; };
 		2A457205242A475300341B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A457204242A475300341B1A /* Assets.xcassets */; };
 		2A457208242A475300341B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A457206242A475300341B1A /* LaunchScreen.storyboard */; };
+		D35E4D64F7ED1DCBF5D8FDB5 /* Pods_Realm_CRUD_Using_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2A457204242A475300341B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A457207242A475300341B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A457209242A475300341B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_CRUD_Using_Storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E480E3C6FE81E3ED8AE23F13 /* Pods-Realm CRUD Using Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm CRUD Using Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		F7ECB82C7F3067C3CAD9FCF8 /* Pods-Realm CRUD Using Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm CRUD Using Storyboard.release.xcconfig"; path = "Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35E4D64F7ED1DCBF5D8FDB5 /* Pods_Realm_CRUD_Using_Storyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2A4571FA242A474E00341B1A /* Realm CRUD Using Storyboard */,
 				2A4571F9242A474E00341B1A /* Products */,
+				C1442A0626EF315CC25BD377 /* Pods */,
+				9B592F43289C7AC0C1D5ABCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Realm CRUD Using Storyboard";
 			sourceTree = "<group>";
 		};
+		9B592F43289C7AC0C1D5ABCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1442A0626EF315CC25BD377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E480E3C6FE81E3ED8AE23F13 /* Pods-Realm CRUD Using Storyboard.debug.xcconfig */,
+				F7ECB82C7F3067C3CAD9FCF8 /* Pods-Realm CRUD Using Storyboard.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A45720C242A475300341B1A /* Build configuration list for PBXNativeTarget "Realm CRUD Using Storyboard" */;
 			buildPhases = (
+				1B01FFD83BBCF9642CD8D599 /* [CP] Check Pods Manifest.lock */,
 				2A4571F4242A474E00341B1A /* Sources */,
 				2A4571F5242A474E00341B1A /* Frameworks */,
 				2A4571F6242A474E00341B1A /* Resources */,
+				C69B1B0309251CE253ADA4E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B01FFD83BBCF9642CD8D599 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Realm CRUD Using Storyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69B1B0309251CE253ADA4E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A4571F4242A474E00341B1A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		2A45720D242A475300341B1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E480E3C6FE81E3ED8AE23F13 /* Pods-Realm CRUD Using Storyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		2A45720E242A475300341B1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7ECB82C7F3067C3CAD9FCF8 /* Pods-Realm CRUD Using Storyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
