@@ -80,5 +80,24 @@ extension ViewController : UITableViewDataSource,UITableViewDelegate{
         
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, nil) in
+            
+            DbHelper.dbInstance.deleteUser(index: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+
+            
+        }
+        let config = UISwipeActionsConfiguration(actions: [delete])
+        config.performsFirstActionWithFullSwipe = false
+        return config
+        
+        
+        
+    }
+    
+  
+    
     
 }

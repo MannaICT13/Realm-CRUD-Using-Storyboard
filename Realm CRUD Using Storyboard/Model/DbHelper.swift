@@ -27,7 +27,7 @@ class DbHelper {
         
     }
     
-    
+    // Create data to database
     func WriteUser(_ name : String ,_ dept : String){
         
         try! realmInstance.write({
@@ -36,11 +36,25 @@ class DbHelper {
         
     }
     
-    
+    //read data from database
     func retriveUser() -> Results<User>?{
         
         user = realmInstance.objects(User.self)
         return user
+        
+    }
+    func deleteUser(index : Int){
+        
+        let user = retriveUser()
+        
+        
+        try! realmInstance.write({
+            
+            realmInstance.delete(user![index])
+        })
+        
+        
+        
         
     }
     
