@@ -10,12 +10,19 @@ import UIKit
 
 class AddUserViewController: UIViewController {
 
+    @IBOutlet weak var nameTextFieldAddUser: UITextField!
+    
+    @IBOutlet weak var deptTextFieldAddUser: UITextField!
+    
+    @IBOutlet weak var saveBtnOutletAddUser: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
     
-
+    @IBAction func saveBtnAction(_ sender: Any) {
+    }
+    
 
 }

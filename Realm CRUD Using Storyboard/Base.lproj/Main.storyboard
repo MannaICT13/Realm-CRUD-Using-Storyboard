@@ -30,13 +30,52 @@
                     <view key="view" contentMode="scaleToFill" id="8Wt-4A-mwA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DHM-YN-bxh">
+                                <rect key="frame" x="20" y="131" width="374" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Deprtment" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOe-qp-RhU">
+                                <rect key="frame" x="20" y="183" width="374" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff3-g0-GOf">
+                                <rect key="frame" x="20" y="260" width="374" height="39"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtnAction:" destination="X75-wR-3Fn" eventType="touchUpInside" id="UAb-DS-tlz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FOe-qp-RhU" firstAttribute="top" secondItem="DHM-YN-bxh" secondAttribute="bottom" constant="20" id="JDJ-lV-sC6"/>
+                            <constraint firstItem="FOe-qp-RhU" firstAttribute="leading" secondItem="GiC-RX-FN6" secondAttribute="leading" constant="20" id="N2o-7o-VIl"/>
+                            <constraint firstItem="GiC-RX-FN6" firstAttribute="trailing" secondItem="FOe-qp-RhU" secondAttribute="trailing" constant="20" id="Tyc-Ue-6cV"/>
+                            <constraint firstItem="Ff3-g0-GOf" firstAttribute="top" secondItem="FOe-qp-RhU" secondAttribute="bottom" constant="45" id="U2F-RC-twk"/>
+                            <constraint firstItem="DHM-YN-bxh" firstAttribute="top" secondItem="GiC-RX-FN6" secondAttribute="top" constant="87" id="XI2-KU-wud"/>
+                            <constraint firstItem="GiC-RX-FN6" firstAttribute="trailing" secondItem="Ff3-g0-GOf" secondAttribute="trailing" constant="20" id="bxr-sQ-I0b"/>
+                            <constraint firstItem="DHM-YN-bxh" firstAttribute="leading" secondItem="GiC-RX-FN6" secondAttribute="leading" constant="20" id="kLO-WR-0DR"/>
+                            <constraint firstItem="Ff3-g0-GOf" firstAttribute="leading" secondItem="GiC-RX-FN6" secondAttribute="leading" constant="20" id="q5q-pB-YyR"/>
+                            <constraint firstItem="GiC-RX-FN6" firstAttribute="trailing" secondItem="DHM-YN-bxh" secondAttribute="trailing" constant="20" id="sfX-nE-GpG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GiC-RX-FN6"/>
                     </view>
+                    <connections>
+                        <outlet property="deptTextFieldAddUser" destination="FOe-qp-RhU" id="2Ro-4k-noS"/>
+                        <outlet property="nameTextFieldAddUser" destination="DHM-YN-bxh" id="TfG-pz-RHw"/>
+                        <outlet property="saveBtnOutletAddUser" destination="Ff3-g0-GOf" id="nz7-hF-bhV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nv3-pN-7Gq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="21"/>
+            <point key="canvasLocation" x="53.623188405797109" y="20.758928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DP2-WE-FvE">
