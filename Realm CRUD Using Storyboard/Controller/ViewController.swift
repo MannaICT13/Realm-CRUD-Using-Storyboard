@@ -97,6 +97,19 @@ extension ViewController : UITableViewDataSource,UITableViewDelegate{
         
     }
     
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let detailTVC = self.storyboard?.instantiateViewController(identifier: "DetailTableViewController") as! DetailTableViewController
+        detailTVC.userDetail = user![indexPath.row]
+        detailTVC.index = indexPath.row
+        
+        self.navigationController?.pushViewController(detailTVC, animated: true)
+        
+    }
+    
+    
   
     
     

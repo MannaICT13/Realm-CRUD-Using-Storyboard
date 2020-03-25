@@ -43,6 +43,9 @@ class DbHelper {
         return user
         
     }
+    
+    //delete user
+    
     func deleteUser(index : Int){
         
         let user = retriveUser()
@@ -53,11 +56,25 @@ class DbHelper {
             realmInstance.delete(user![index])
         })
         
+}
+    //update user
+    
+    func updateUser(_ name : String ,_ dept : String, index:Int){
         
+     let user = retriveUser()
+        
+        try! realmInstance.write({
+            
+            user![index].name = name
+            user![index].dept = dept
+            
+        })
+        
+        
+     
         
         
     }
-    
     
     
     

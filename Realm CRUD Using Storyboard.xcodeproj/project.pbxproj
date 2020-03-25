@@ -17,6 +17,7 @@
 		2A5FE90C242B548E003D3E6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FE90B242B548E003D3E6C /* User.swift */; };
 		2A5FE90E242B5A18003D3E6C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FE90D242B5A18003D3E6C /* TableViewCell.swift */; };
 		2A5FE910242B6372003D3E6C /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FE90F242B6372003D3E6C /* DbHelper.swift */; };
+		2A5FE913242B9355003D3E6C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FE912242B9355003D3E6C /* DetailTableViewController.swift */; };
 		D35E4D64F7ED1DCBF5D8FDB5 /* Pods_Realm_CRUD_Using_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		2A5FE90B242B548E003D3E6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2A5FE90D242B5A18003D3E6C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2A5FE90F242B6372003D3E6C /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
+		2A5FE912242B9355003D3E6C /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_CRUD_Using_Storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E480E3C6FE81E3ED8AE23F13 /* Pods-Realm CRUD Using Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm CRUD Using Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		F7ECB82C7F3067C3CAD9FCF8 /* Pods-Realm CRUD Using Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm CRUD Using Storyboard.release.xcconfig"; path = "Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,12 +73,11 @@
 		2A4571FA242A474E00341B1A /* Realm CRUD Using Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2A5FE911242B92EF003D3E6C /* Controller */,
 				2A5FE90A242B546D003D3E6C /* Model */,
 				2A4571FB242A474E00341B1A /* AppDelegate.swift */,
 				2A4571FD242A474E00341B1A /* SceneDelegate.swift */,
-				2A4571FF242A474E00341B1A /* ViewController.swift */,
 				2A5FE90D242B5A18003D3E6C /* TableViewCell.swift */,
-				2A5FE908242B47E4003D3E6C /* AddUserViewController.swift */,
 				2A457201242A474E00341B1A /* Main.storyboard */,
 				2A457204242A475300341B1A /* Assets.xcassets */,
 				2A457206242A475300341B1A /* LaunchScreen.storyboard */,
@@ -92,6 +93,16 @@
 				2A5FE90F242B6372003D3E6C /* DbHelper.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2A5FE911242B92EF003D3E6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A4571FF242A474E00341B1A /* ViewController.swift */,
+				2A5FE908242B47E4003D3E6C /* AddUserViewController.swift */,
+				2A5FE912242B9355003D3E6C /* DetailTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9B592F43289C7AC0C1D5ABCB /* Frameworks */ = {
@@ -230,6 +241,7 @@
 				2A5FE909242B47E4003D3E6C /* AddUserViewController.swift in Sources */,
 				2A4571FC242A474E00341B1A /* AppDelegate.swift in Sources */,
 				2A5FE90E242B5A18003D3E6C /* TableViewCell.swift in Sources */,
+				2A5FE913242B9355003D3E6C /* DetailTableViewController.swift in Sources */,
 				2A5FE910242B6372003D3E6C /* DbHelper.swift in Sources */,
 				2A5FE90C242B548E003D3E6C /* User.swift in Sources */,
 				2A4571FE242A474E00341B1A /* SceneDelegate.swift in Sources */,
