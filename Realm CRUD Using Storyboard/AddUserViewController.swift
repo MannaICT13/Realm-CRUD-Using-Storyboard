@@ -18,9 +18,7 @@ class AddUserViewController: UIViewController {
     @IBOutlet weak var saveBtnOutletAddUser: UIButton!
     
     
-    
-    
-    let realmInstance = try! Realm()
+
    
     override func viewDidLoad() {
         
@@ -29,24 +27,10 @@ class AddUserViewController: UIViewController {
         
     }
     
-    
-    func makeUserInit(_ name : String ,_ dept : String) -> User{
-        
-        let newUser = User()
-        newUser.name = name
-        newUser.dept = dept
-        
-        return newUser
-        
-    }
-    
+  
     @IBAction func saveBtnAction(_ sender: Any) {
       
-
-        try! realmInstance.write({
-            
-            realmInstance.add(makeUserInit(nameTextFieldAddUser.text!, deptTextFieldAddUser.text!))
-        })
+        DbHelper.dbInstance.WriteUser(nameTextFieldAddUser.text!, deptTextFieldAddUser.text!)
         self.navigationController?.popViewController(animated: true)
         
         

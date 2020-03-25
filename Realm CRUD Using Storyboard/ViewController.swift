@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
+
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    
+    var user : Results<User>?
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        self.title = "USER"
         
         setAddBtn()
+        user = DbHelper.dbInstance.retriveUser()
+        
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        user = DbHelper.dbInstance.retriveUser()
+        tableView.reloadData()
     }
     
     func setAddBtn(){
@@ -35,4 +54,31 @@ class ViewController: UIViewController {
 
 
 }
-
+extension ViewController : UITableViewDataSource,UITableViewDelegate{
+   
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        return user!.count
+        
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        cell.nameLblCell.text = user![indexPath.row].name
+        cell.deptLblCell.text = user![indexPath.row].dept
+        
+        return cell
+        
+    }
+    
+    
+}
