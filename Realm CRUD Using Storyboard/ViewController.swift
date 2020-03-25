@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     
     @objc func setAddBtnAction(_ sender : UIBarButtonItem){
         
-        
+        let addUserVC = self.storyboard?.instantiateViewController(identifier: "AddUserViewController") as! AddUserViewController
+        self.navigationController?.pushViewController(addUserVC, animated: true)
         
     }
     

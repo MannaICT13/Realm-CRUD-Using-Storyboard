@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		2A457203242A474E00341B1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A457201242A474E00341B1A /* Main.storyboard */; };
 		2A457205242A475300341B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A457204242A475300341B1A /* Assets.xcassets */; };
 		2A457208242A475300341B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A457206242A475300341B1A /* LaunchScreen.storyboard */; };
+		2A5FE909242B47E4003D3E6C /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FE908242B47E4003D3E6C /* AddUserViewController.swift */; };
 		D35E4D64F7ED1DCBF5D8FDB5 /* Pods_Realm_CRUD_Using_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		2A457204242A475300341B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A457207242A475300341B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A457209242A475300341B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5FE908242B47E4003D3E6C /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		430A4A2664EC1F632E7D6892 /* Pods_Realm_CRUD_Using_Storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realm_CRUD_Using_Storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E480E3C6FE81E3ED8AE23F13 /* Pods-Realm CRUD Using Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm CRUD Using Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		F7ECB82C7F3067C3CAD9FCF8 /* Pods-Realm CRUD Using Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm CRUD Using Storyboard.release.xcconfig"; path = "Target Support Files/Pods-Realm CRUD Using Storyboard/Pods-Realm CRUD Using Storyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				2A4571FB242A474E00341B1A /* AppDelegate.swift */,
 				2A4571FD242A474E00341B1A /* SceneDelegate.swift */,
 				2A4571FF242A474E00341B1A /* ViewController.swift */,
+				2A5FE908242B47E4003D3E6C /* AddUserViewController.swift */,
 				2A457201242A474E00341B1A /* Main.storyboard */,
 				2A457204242A475300341B1A /* Assets.xcassets */,
 				2A457206242A475300341B1A /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				E480E3C6FE81E3ED8AE23F13 /* Pods-Realm CRUD Using Storyboard.debug.xcconfig */,
 				F7ECB82C7F3067C3CAD9FCF8 /* Pods-Realm CRUD Using Storyboard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A457200242A474E00341B1A /* ViewController.swift in Sources */,
+				2A5FE909242B47E4003D3E6C /* AddUserViewController.swift in Sources */,
 				2A4571FC242A474E00341B1A /* AppDelegate.swift in Sources */,
 				2A4571FE242A474E00341B1A /* SceneDelegate.swift in Sources */,
 			);

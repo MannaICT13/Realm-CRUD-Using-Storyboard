@@ -23,6 +23,21 @@
             </objects>
             <point key="canvasLocation" x="-628" y="19"/>
         </scene>
+        <!--Add User View Controller-->
+        <scene sceneID="czQ-4w-wtV">
+            <objects>
+                <viewController storyboardIdentifier="AddUserViewController" id="X75-wR-3Fn" customClass="AddUserViewController" customModule="Realm_CRUD_Using_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Wt-4A-mwA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GiC-RX-FN6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nv3-pN-7Gq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="21"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="DP2-WE-FvE">
             <objects>
